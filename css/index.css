@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    animation: animate 30s infinite;
+    
+}
+@keyframes animate{
+    0%{
+        background: url("../img/bg1.jpg") no-repeat;
+        background-size: 100vw 100vh;
+    }
+    10%{
+        background: url("../img/bg2.jpg") no-repeat;
+        background-size: 100vw 100vh;
+    }
+    30%{
+        background: url("../img/bg3.jpg") no-repeat;
+        background-size: 100vw 100vh;
+    }
+    40%{
+        background: url("../img/bg4.jpg") no-repeat;
+        background-size: 100vw 100vh;
+    }
+    50%{
+        background: url("../img/bg5.jpg") no-repeat;
+        background-size: 100vw 100vh;
+    }
+    60%{
+        background: url("../img/bg6.jpg") no-repeat;
+        background-size: 100vw 100vh;
+    }
+    70%{
+        background: url("../img/bg7.jpg") no-repeat;
+        background-size: 100vw 100vh;
+    }
+    80%{
+        background: url("../img/bg8.jpg") no-repeat;
+        background-size: 100vw 100vh;
+    }
+    90%{
+        background: url("../img/bg9.jpg") no-repeat;
+        background-size: 100vw 100vh;
+    }
+    100%{
+        background: url("../img/bg10.jpg") no-repeat;
+        background-size: 100vw 100vh;
+    }
+}
+button{
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    width: 20vw;
+    height: 10vh;
+    font-size: 2.5vw;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+button:hover{
+    transform: scale(1.02,1.02);
+    box-shadow: 1px 1px 20px white;
+}
+@media (max-width:768px){
+    button{
+        height: 8vh;
+    }
+}
+@media (max-width:450px){
+    button{
+        left: 35%;
+        width: 30vw;
+        height: 7vh;
+        font-size: 3.5vw;
+    }
+}

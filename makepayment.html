@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MovieFlex</title>
+        <script src="js/redirect.js"></script>
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/makepayment.css">
+    </head>
+    <body>
+        <nav>
+            <a href="index.html"><div class="logo"><img src="img/logo.png"
+                        alt=""></div></a>
+            <a href="index.html"><div class="webName"><h3>MovieFlex</h3></div></a>
+            <div class="options">
+                <ul>
+                    <a href="home.html" class="active"><li>Home</li></a>
+                    <a href="about.html"><li>About Us</li></a>
+                <a href="contact.html"><li>Contact Us</li></a>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-container">
+            <div class="main-container1">
+                <div class="radio">.
+                    <p>Select Time</p>
+                    <input type="radio" name="cb" id="r1"><label>09:00 AM</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="cb" id="r2"><label>06:00 PM</label>    
+                </div>
+                <div class="date">
+                    <p>Select Date : </p>
+                    <input type="date" id="d">
+                </div>
+                <p>Enter how many Seat you want to book</p>
+                <input type="number" id="n" placeholder="Number of Seats">
+
+                <button onclick="submitNP()">Submit</button>
+            </div>
+            <div class="main-container2" id="main-container2">
+                <p><b class="pa">You have to pay : </b><span id="amount"></span></p>
+                <img src="img/qr.jpg" alt="">
+                <p><b class="upi">UPI ID : </bc>9665248847@ybl</p>
+                <button onclick="ticket()">Payment Completed</button>
+            </div>
+        </div>
+    </body>
+</html>

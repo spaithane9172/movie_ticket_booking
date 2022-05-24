@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFlex</title>
+    <script src="js/redirect.js"></script>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/ticket.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><div class="logo"><img src="img/logo.png"
+                    alt=""></div></a>
+        <a href="index.html"><div class="webName"><h3>MovieFlex</h3></div></a>
+        <div class="options">
+            <ul>
+                <a href="home.html" class="active"><li>Home</li></a>
+                <a href="about.html"><li>About Us</li></a>
+                <a href="contact.html"><li>Contact Us</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="ticket">
+            <img src="img/logo.png" alt="">
+            <h3>Movie Ticket</h3>
+            <p><b>Movie Namee : </b><span id="mn"></span></p>
+            <P><b>Seat Numbers : </b><span id="ns"></span></P>
+            <p><b>Price : </b><span id="p"></span></p>
+            <p><b>Time : </b><span id="time"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Date : </b><span id="dd"></span></p>
+        </div>
+        <button onclick="gbt()">Go To Back</button>
+    </div>
+    <script>
+        document.getElementById("mn").innerHTML=localStorage.getItem("movieName")
+        document.getElementById("p").innerHTML=localStorage.getItem("np")*80;
+        document.getElementById("time").innerHTML=localStorage.getItem("time")
+        document.getElementById("dd").innerHTML=localStorage.getItem("date")
+        if(localStorage.getItem("movieName")=="RRR"){
+            index=localStorage.getItem("M1S")
+        }
+        if(localStorage.getItem("movieName")=="K.G.F: Chapter 2"){
+            index=localStorage.getItem("M2S")
+        }
+        if(localStorage.getItem("movieName")=="Pushpa: The Rise"){
+            index=localStorage.getItem("M3S")
+        }
+        if(localStorage.getItem("movieName")=="Spider-Man: No Way Home"){
+            index=localStorage.getItem("M4S")
+        }
+        for(i=1;i<=localStorage.getItem("np");i++){
+            document.getElementById("ns").innerHTML+=`S${++index},`;
+        }
+        if(localStorage.getItem("movieName")=="RRR"){
+            localStorage.setItem("M1S",index);
+        }
+        if(localStorage.getItem("movieName")=="K.G.F: Chapter 2"){
+            localStorage.setItem("M2S",index)
+        }
+        if(localStorage.getItem("movieName")=="Pushpa: The Rise"){
+            localStorage.setItem("M3S",index)
+        }
+        if(localStorage.getItem("movieName")=="Spider-Man: No Way Home"){
+            localStorage.setItem("M4S",index)
+        }
+    </script>
+</body>
+</html>

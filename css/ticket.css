@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.ticket{
+    border: 1px solid black;
+    width: 30vw;
+    height: fit-content;
+    box-shadow: 1px 1px 10px black;
+    padding: 1vh 1vw;
+    margin-bottom: 5vh;
+}
+.ticket img{
+    opacity: 0.1;
+    position: absolute;
+    width: 20vw;
+    height: 30vh;
+    left: 40%;
+}
+.ticket h3{
+    text-align: center;
+}
+button{
+    width: 20vw;
+    height: 7vh;
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+@media (min-width:992px) and (max-width:1200px){
+    .ticket{
+        width: 50vw;
+    }
+}
+@media (min-width:768px) and (max-width:992px){
+    .ticket{
+        width: 50vw;
+    }
+}
+@media (min-width:576px) and (max-width:768px){
+    .ticket{
+        width: 70vw;
+        padding: 1vh 4vw;
+    }
+    button{
+        width: 25vw;
+        font-size: 2.5vw;
+    }
+}
+@media (max-width:576px){
+    .ticket{
+        width: 80vw;
+        padding: 1vh 5vws;
+    }
+    p{
+        font-size: 3vw;
+    }
+    button{
+        width: 30vw;
+        font-size: 3vw;
+    }
+    .ticket img{
+        width: 40vw;
+        height: 30vh;
+        top: 40%;
+        left: 30%;
+    }
+}
+@media (max-width:450px){
+    p{
+        font-size: 4.3vw;
+    }
+    button{
+        font-size: 3.5vw;
+    }
+    .ticket img{
+        width: 50vw;
+        height: 25vh;
+        left: 25%;
+    }
+}

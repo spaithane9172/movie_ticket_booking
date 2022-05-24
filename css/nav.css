@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    padding: 0;
+    margin: 0;
+    padding: 1vh 5vw;
+    position: fixed;
+    width: 100vw;
+}
+nav .webName h3{
+    font-weight: bold;
+    font-size: 2vw;
+    margin: 0;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+a{
+    text-decoration: none;
+}
+nav a{
+    color: black;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    margin: 0;
+    padding: 0;
+}
+ul li:hover{
+    background-color: gray;
+    border-radius: 5px;
+}
+nav .logo img{
+    width: 4vw;
+    height: 7vh;
+}
+.active{
+    background-color: gray;
+    border-radius: 5px;
+}
+@media (max-width:992px) and (min-width:768px){
+    a{
+        font-size: 2vw;
+    }
+}
+@media (max-width:768px){
+    nav a{
+        font-size: 2.5vw;
+    }
+    ul li{
+        width: 15vw;
+        height: 8vh;
+    }
+}
+@media (max-width:450px){
+    nav a{
+        font-size: 3vw;
+    }
+    ul li{
+        width: 20vw;
+        height: 5vh;
+    }
+    nav .webName h3{
+        font-size: 4vw;
+    }
+    nav .logo img{
+        width: 5vw;
+        height: 5vh;
+    }
+}

@@ -1,0 +1,196 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.main-container{
+    padding-top: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10vh;
+
+}
+.main-container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.radio{
+    margin-bottom: 3vh;
+}
+.radio p{
+    text-align: center;
+}
+.date p{
+    text-align: center;
+}
+.main-container1 p{
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3vh;
+}
+.main-container1 input[type=number]{
+    width: 40vw;
+    height: 5vh;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+    padding-left: 2vw;
+}
+.main-container1 input[type=date]{
+    width: 40vw;
+    height: 5vh;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+    padding-left: 2vw;
+}
+.main-container1 button{
+    width: 15vw;
+    height: 5vh;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.main-container2{
+    display: none;
+}
+.pa{
+    font-size: 2vw;
+    font-weight: bold;
+}
+#amount{
+    font-size: 2vw;
+}
+.main-container2 p{
+    font-size: 2vw;
+}
+.main-container2 button{
+    width: 20vw;
+    height: 7vh;
+    border-radius: 10px;
+    background-color: black;
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: white;
+
+}
+.main-container2 img{
+    width: 30vw;
+    height: 60vh;
+}
+@media (max-width:768px) and (min-width:576px){
+    .main-container1 p{
+        font-size: 3.5vw;
+    }
+    .main-container1 input[type=number]{
+        width: 50vw;
+        height: 5vh;
+        margin-bottom: 3vh;
+        padding-left: 2vw;
+    }
+    .main-container1 .date p{
+        font-size: 3.5vw;
+    }
+    .main-container1 .date input[type=date]{
+        width: 50vw;
+        height: 5vh;
+        margin-bottom: 3vh;
+        padding-left: 2vw;
+    }
+    .main-container1 button{
+        width: 20vw;
+        height: 6vh;
+        margin-bottom: 2vh;
+    }
+    .pa{
+        font-size: 4vw;
+    }
+    #amount{
+        font-size: 4vw;
+    }
+    .main-container2 p{
+        font-size: 3vw;
+    }
+    .main-container2 img{
+        width: 50vw;
+        height: 50vh;
+    }
+    .main-container2 button{
+        width: 30vw;
+        height: 7vh;
+        font-size: 2vw;
+    
+    }
+    .radio{
+        margin-bottom: 3vh; 
+    }
+    .radio p{
+        text-align: center;
+    }
+}
+@media (max-width:576px){
+    .main-container1 p{
+        font-size: 4vw;
+    }
+    .main-container1 input[type=number]{
+        width: 60vw;
+        height: 5vh;
+        margin-bottom: 2vh;
+        padding-left: 2vw;
+    }
+    .main-container1 .date p{
+        font-size: 4vw;
+    }
+    .main-container1 .date input[type=date]{
+        width: 60vw;
+        height: 5vh;
+        margin-bottom: 2vh;
+        padding-left: 2vw;
+    }
+    .main-container1 button{
+        width: 30vw;
+        height: 6vh;
+        margin-bottom: 2vh;
+        font-size: 4vw;
+    }
+    .pa{
+        font-size: 6vw;
+    }
+    #amount{
+        font-size: 6vw;
+    }
+    .main-container2 p{
+        font-size: 6vw;
+    }
+    .main-container2 img{
+        width: 70vw;
+        height: 40vh;
+    }
+    .main-container2 button{
+        width: 50vw;
+        height: 7vh;
+        font-size: 4vw;
+    
+    }
+    .radio{
+        margin-bottom: 3vh;
+    }
+    .radio p{
+        text-align: center;
+        font-size: 6vw;
+    }
+}
+@media (max-width:450px){
+    .main-container{
+        padding-top: 5vh;
+    
+    }
+}
+
